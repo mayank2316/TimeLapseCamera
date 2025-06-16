@@ -147,8 +147,11 @@ public class CameraSettings {
 		for (String fps : fpsList) {
 			try {
 				fpsIntList.add(Integer.valueOf(fps));
-			} catch (NumberFormatException e) {
-			}
+			} catch (NumberFormatException e) {}
+		}
+
+		for(int i=0; i<6; i++) {
+			fpsIntList.add(i);
 		}
 
 		Collections.sort(fpsIntList);
